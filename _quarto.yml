@@ -1,0 +1,42 @@
+project:
+  type: book
+
+execute:
+  freeze: auto
+  
+book:
+  title: "Skript zum Modul Angewandte Statistik"
+  author:
+  - Nathanael Lutz
+  - André Meichtry
+  date: "10/24/2024"
+  language: de
+  chapters:
+    - index.qmd
+    - 01_descriptives.qmd
+    # - 02_prop_distributions.qmd
+    # - 03_inference.qmd
+    # - 04_compare_means.qmd
+    # - 05_correlation.qmd
+    # - 06_simple_linear-regression.qmd
+    # - 07_multiple_linear-regression.qmd
+    # - 08_inf_cat_data.qmd
+    # - 09_logistic_regression.qmd
+    # - 10_poisson_regression.qmd
+    # - 11_survival.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: journal
+    
+editor: source
+
+crossref:
+  fig-title: Abbildung
+  fig-prefix: Abbildung # (default is "Figure")
+  tbl-title: Tabelle     # (default is "Table")
+  tbl-prefix: Tabelle
+  sec-prefix: Kapitel
